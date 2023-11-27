@@ -1,7 +1,7 @@
 package main
 
 import (
-	"3-Minute-Sleep/pkgs"
+	"3-Minute-Sleep/pkgs/winInteractions"
 	"fmt"
 	"log"
 	"time"
@@ -22,7 +22,7 @@ func main() {
 			i = 0
 		}
 
-		displayActive, err := pkgs.IsDisplaying()
+		displayActive, err := winInteractions.IsDisplaying()
 
 		if err != nil {
 			log.Fatal(err)
@@ -33,7 +33,10 @@ func main() {
 		if i == len(prevResults)-1 {
 
 			if prevResults[0] == false && prevResults[1] == false && prevResults[2] == false {
-				err := pkgs.SetSuspendState(pkgs.SLEEP_SLEEP, pkgs.CRITICAL)
+				err := winInteractions.SetSuspendState(
+					winInteractions.SLEEP_SLEEP,
+					winInteractions.CRITICAL)
+
 				if err != nil {
 					log.Fatal(err)
 				}
