@@ -2,7 +2,6 @@ package main
 
 import (
 	"3-Minute-Sleep/pkgs/winInteractions"
-	"fmt"
 	"log"
 	"time"
 )
@@ -43,7 +42,6 @@ func main() {
 			}
 		}
 
-		fmt.Print(i, prevResults)
 		time.Sleep(CheckInterval)
 		i++
 
