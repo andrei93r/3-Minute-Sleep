@@ -1,2 +1,2 @@
 win:
-	go build -ldflags "-s -w" -o ./bin/3-Min-Sleep.exe
+	go build -ldflags "-s -w -H windowsgui" -o ./bin/3-Min-Sleep.exe
