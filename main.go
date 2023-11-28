@@ -16,7 +16,6 @@ func main() {
 	i := 0
 
 	for {
-
 		if i > len(prevResults)-1 {
 			i = 0
 		}
@@ -42,8 +41,8 @@ func main() {
 			}
 		}
 
-		time.Sleep(CheckInterval)
 		i++
+		time.Sleep(CheckInterval)
 
 	}
 
