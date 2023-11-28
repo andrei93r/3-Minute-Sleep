@@ -1,2 +1,4 @@
 win:
+	set GOOS=windows
+	set GOARCH=amd64
 	go build -ldflags "-s -w -H windowsgui" -o ./bin/3-Min-Sleep.exe
