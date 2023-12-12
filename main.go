@@ -20,13 +20,13 @@ func main() {
 			i = 0
 		}
 
-		displayActive, err := winInteractions.IsDisplaying()
+		IsDisplaying, err := winInteractions.IsDisplaying()
 
 		if err != nil {
 			log.Fatal(err)
 		}
 
-		prevResults[i] = displayActive
+		prevResults[i] = IsDisplaying
 
 		if i == len(prevResults)-1 {
 
