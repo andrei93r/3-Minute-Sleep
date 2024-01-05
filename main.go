@@ -1,7 +1,7 @@
 package main
 
 import (
-	"3-Minute-Sleep/pkgs/winInteractions"
+	"github.com/andrei93r/3-Minute-Sleep/pkgs/winInteractions"
 	"log"
 	"time"
 )
