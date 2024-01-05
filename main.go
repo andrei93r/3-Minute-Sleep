@@ -1,16 +1,26 @@
 package main
 
 import (
+	"fmt"
+	"github.com/andrei93r/3-Minute-Sleep/pkgs/updater"
 	"github.com/andrei93r/3-Minute-Sleep/pkgs/winInteractions"
 	"log"
 	"time"
 )
 
-const (
-	CheckInterval = 60 * time.Second
-)
+const CheckInterval = 60 * time.Second
+
+var Version = "0.0.1"
 
 func main() {
+
+	fmt.Println("Version %i", Version)
+
+	err := updater.NewUpdater(Version)
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	prevResults := [3]bool{true, true, true}
 
 	i := 0

@@ -1,4 +1,5 @@
 Version := 0.0.4
+VersionI := 401
 
 
 Program-Name := "3-Minute-Sleep"
@@ -18,5 +19,11 @@ win:
 	@echo "Building windows version $(Version)"
 	goversioninfo
 	cd
-	go  build -ldflags "-s -w -H windowsgui" -o $(Exec-Path)
+	go  build -ldflags "-X 'main.Version=9.0.1' " -o $(Exec-Path)
 	del resource.syso
+
+test:
+	$(Exec-Path)
+
+last:
+	#go  build -ldflags "-s -w -H windowsgui" -o $(Exec-Path)
