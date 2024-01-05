@@ -19,7 +19,7 @@
         "FileSubType": "00"
     },
     "StringFileInfo": {
-        "Comments": "Puts t",
+        "Comments": "Puts a laptop to sleep after 3 minutes of no display",
         "CompanyName": "Personal Projects",
         "FileDescription": "",
         "FileVersion": "",
@@ -29,7 +29,7 @@
         "OriginalFilename": "",
         "PrivateBuild": "",
         "ProductName": "3-Minute-Sleep",
-        "ProductVersion": "v1.0.0.9",
+        "ProductVersion": "v0.0.5.0",
         "SpecialBuild": ""
     },
     "VarFileInfo": {
