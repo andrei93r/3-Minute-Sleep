@@ -6,6 +6,7 @@ Exec-Path := "./bin/3-Minute-Sleep.exe"
 
 
 pre:
+	win
 	gh release create $(Version) $(Exec-Path) --title "Release $(Version)" --prerelease --generate-notes
 
 deps:
