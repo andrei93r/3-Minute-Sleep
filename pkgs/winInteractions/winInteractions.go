@@ -23,7 +23,7 @@ var (
 )
 
 func SetSuspendState(forceSleep, critical string) error {
-	disableWakeEvent := WAKE_EVENTS_ENABLED
+	disableWakeEvent := WAKE_EVENTS_DISABLED
 	ret, _, err := setSuspendState.Call(
 		uintptr(len(forceSleep)),
 		uintptr(unsafe.Pointer(&forceSleep)),
